@@ -1,0 +1,49 @@
+current_result = 0.0
+print('Current Result: ', current_result)
+print('''\nCalculator Menu
+---------------
+0. Exit Program
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exponentiation
+6. Logarithm
+7. Display Average''')
+
+menu_selection = int(input('\nEnter Menu Selection: '))
+if menu_selection == 0:
+    print('\nThanks for using this calculator. Goodbye!')
+
+elif menu_selection == 1:
+    first_operand = float(input('\nEnter first operand: '))
+    second_operand = float(input('Enter second operand: '))
+    current_results = first_operand + second_operand
+    print('\nCurrent Result: ', current_results)
+
+elif menu_selection == 2:
+    first_operand = float(input('\nEnter first operand: '))
+    second_operand = float(input('Enter second operand: '))
+    current_results = first_operand - second_operand
+    print('\nCurrent Result: ', current_results)
+
+elif menu_selection == 3:
+    first_operand = float(input('\nEnter first operand: '))
+    second_operand = float(input('Enter second operand: '))
+    current_results = first_operand * second_operand
+    print('\nCurrent Result: ', current_results)
+
+elif menu_selection == 4:
+    first_operand = float(input('\nEnter first operand: '))
+    second_operand = float(input('Enter second operand: '))
+    current_results = first_operand / second_operand
+    print('\nCurrent Result: ', current_results)
+
+elif menu_selection == 5:
+    first_operand = float(input('\nEnter first operand: '))
+    second_operand = float(input('Enter second operand: '))
+    current_results = pow(first_operand, second_operand)
+    print('\nCurrent Result: ', current_results)
+
+else:
+    print('\nError: Invalid selection!')
